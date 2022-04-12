@@ -1,28 +1,27 @@
 header {
     background-color: #6B6868;
-    height: 22%;
+    height: 25%;
     padding-right: 50px;
     padding-left: 70px;
+}
+a {
+    color: white;
 }
 /*Container*/
 /*Nav*/
 .containerp .nav-header {
-    max-width: 90%;
     float: right;
-    display: inline;
-    bottom: 110px;
 }
 /*Logo*/
 .containerp .nav-header .logo {
-    display: block;
     position: relative;
-    left: -140%;
-    top: 35px;
+    left: -135%;
+    top: 20px;
 }
 /*Botão 1*/
 .containerp .nav-header .botao {
     max-width: 100%;   
-    margin-top: -9%;
+    margin-top: -12%;
 }
 .containerp .nav-header .botao #home {
     color: white; 
@@ -52,27 +51,27 @@ header {
 }
 /*Container 1*/
 .container1 {
-    width: 100%;
-    height: 100%;
-    border: red solid 2px;
+    overflow: hidden;
 }
 /*Imagem Principal*/
 .container1 .img-principal img {
-    max-width: 100%;
-    max-height: 100%;
-    border: blue solid 2px;
+    background-size: cover;  
+    width: 100%;  
 }
 /*Texto da imagem*/
-.container1 .img-principal .text {
-    margin-top: -20vh;
+.container1 .text {
+    margin-top: -30vh;
     margin-left: 5vw;
     color: white;
-    font-size: 36px;
+    opacity: 0.7;
+    font-size: 48px;
     font-weight: 800;
 }
+/*quero um houver*/
 
 /*Gabriel*/
 .container{
+    margin-top: 300px;
     width: 80%;
     min-height: 2024px;
     display: flex;
@@ -208,48 +207,51 @@ footer {
     display: flex;
     height: 355px;
     align-items: center;
-    justify-content: center;    
     padding: 0px;
     margin: 0px;
     color: white;
 }
+/*Logo footer*/
+.logof #logo {
+    margin-left: -75vw;
+    max-width: 230px;
+
+}
 /*Formulario*/
-.formulario {
+.form {
+    flex-grow: 2;
+    width: 50%;
+    margin-left: 20%;
+}
+.form .formulario {
     text-align: center;
-    margin-left: 30vw;
     margin-bottom: 5vh;
 }
-/*Logo footer*/
-#imagem {
+.form .formulario .formulario1 {
     align-items: center;
     justify-content: center;
-    width: 100%; 
-    margin-left: -820px;
-    padding: 50px;
 }
-/*Titulo de contato*/
-.formulario h1 {
+/*Titulo*/
+.form .formulario h2 {
     font-weight: 700;
     margin-top: 2rem;
-    color: rgb(63,81,102);
+    margin-bottom: 2vh;
+    color: white;
 }
-.formulario p {
-    width: 100%;
+.form .formulario p {
     color: rgb(169,187,209);
     font-size: 23px;
+    margin-bottom: 2vh;
 }
-.formulario1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30vw;
-}
-
 /*Icon*/
-#geral-icon {
-    margin-top: -50px;
+.geral-icon {
+    margin-top: -0px;
+    margin-right: 8%;
 }
-#icons {
+.geral-icon p {
+    font-size: 20px;
+}
+.geral-icon .icons {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -257,14 +259,12 @@ footer {
     width: 130px;
 }
 /*Icon quadrados*/
-.icon{
+.icon-logo{
     width: 100%;
     height: auto;
     padding-bottom: 30%;
 }  
-/**/
-
-
+/*id email e botao*/
 #email {
     width: 450px;
     height: 45px;
@@ -287,31 +287,3 @@ footer {
     color: white;
     background-color: lightsteelblue;
 }
-
-
-li {
-    padding: 0%;
-    margin-bottom: 5px;
-}
-ul.est {
-    list-style-position: outside;
-    text-align: start;
-    margin-bottom: 5px;
-}
-a {
-    color: white;
-}
-
-#perguntas {
-    margin-top: -210px;
-}
-.footer p {
-    font-size: 18px;
-}
-#parcerias {
-    margin-top: 37px;
-}
-#estudante p, #parcerias p {
-    margin-left: 20px;
-}
-/**/
