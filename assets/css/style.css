@@ -6,6 +6,7 @@ header {
 }
 a {
     color: white;
+    text-decoration: none;
 }
 /*Container*/
 /*Nav*/
@@ -22,8 +23,10 @@ a {
 .containerp .nav-header .botao {
     max-width: 100%;   
     margin-top: -12%;
+    text-decoration: none;
 }
 .containerp .nav-header .botao #home {
+    text-decoration: none;
     color: white; 
     width: 150px;
     height: 50px;
@@ -40,10 +43,11 @@ a {
     border: none; 
     font-size: 16px;
     font-weight: 600; 
+    padding-left: 30px;
 }
 .containerp .nav-header .botao #inscricao {
     color: white; 
-    width: 160px;
+    width: 150px;
     background-color: transparent;
     border: none;
     font-size: 16px;
@@ -57,34 +61,33 @@ a {
 .container1 .img-principal img {
     background-size: cover;  
     width: 100%;  
+    margin-bottom: -82px;
 }
 /*Texto da imagem*/
 .container1 .text {
-    margin-top: -30vh;
-    margin-left: 5vw;
+    max-width: 60%;
+    margin-top: -20%;
+    padding-bottom: 1%;
+    margin-left: 5%;
     color: white;
     opacity: 0.7;
     font-size: 48px;
-    font-weight: 800;
 }
-/*quero um houver*/
-
-/*Gabriel*/
 .container{
-    margin-top: 300px;
     width: 80%;
     min-height: 2024px;
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-top: 5%;
 }
-/*Titulos das areas*/
+/*=====Barra do lado dos titulos=====*/
 .container .titulos-tema {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 25px;
     text-transform: uppercase;
 }
 /*Borda do lado dos titulos*/
@@ -94,6 +97,34 @@ a {
     background-color: steelblue;
     margin-left: 5px;
 }
+/*===manipula a div: Moda===*/
+/*Div moda*/
+.container .div-moda{    
+    margin: 20px 0px 30px 0px;
+    background-color: #d6e3f4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+/*Tamanho da div para imagem*/
+.container .div-moda .img-moda{
+    width: 50%;
+}
+/*Tamanho do elemento img*/
+.container .div-moda .img-moda img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*Texto da div moda*/
+.container .div-moda .txt-moda{
+    width: 50%;
+    padding: 0px 10px 0px 10px;
+}
+.container .div-moda .txt-moda h2{
+    padding: 0px 0px 20px 0px;
+}
+/*=====Manipula a div: night=====*/
 /*Faz as materias ficarem uma do lado da outra*/
 .container .infos{
     display: flex;
@@ -104,7 +135,7 @@ a {
 .container .infos .dicas-fernando {
     width: 20%;
     flex-grow: 1;
-    margin: 10px 15px 55px 15px;
+    margin: 20px 15px -45px 15px;
 }
 /*Define o tamanho da div img e não deixa a imagem sair da div*/
 .container .infos .dicas-fernando .imgs{
@@ -112,31 +143,29 @@ a {
     width: 100%;
     height: 100%;
 }
-/*Class para as imagens do primeiro tema*/
+/*Class para as imagens*/
 .container .infos .dicas-fernando .imgs .imgs-inicio{
     width: 130%;
     height: 80%;
 }
+.container .infos .dicas-fernando .imgs #rio{
+    width: 145%;
+    height: 80%;
+}
 /*Estiliza o subtitulo dentro da imagem*/
 .container .infos .dicas-fernando .imgs .subtitulo-txt{
-    font-size: 30px;
+    font-size: 25px;
     margin: 5px;
     position: relative;
-    bottom: 80px;
+    bottom: 115px;
     color: white;
     opacity: 0.7;
 }
-/*Estiliza o subtitulo dentro da imagem*/
+/*hover para o texto*/
 .container .infos .dicas-fernando .imgs .subtitulo-txt:hover{
     transition-duration: 0.7s;
     opacity: 1;
     cursor: pointer;
-}
-/*Texto das materias*/
-.container .infos .dicas-fernando .txt{
-    height: 18%;
-    font-size: 18px;
-    margin-top: -65px;
 }
 /*Mostra o nome do autor da materia*/
 .container .infos .autor{
@@ -145,39 +174,16 @@ a {
     text-transform: uppercase;
     margin-top: 10px;
 }
-/*Div do meio*/
-.container .div-meio{    
-    margin-top: 15px;
-    background-color: lightsteelblue;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-/*Tamanho da div para imagem no meio*/
-.container .div-meio .img-meio{
-    width: 50%;
-}
-/*Tamanho do elemento img*/
-.container .div-meio .img-meio img{
-    max-width: 100%;
-    max-height: 100%;
-}
-/*Texto da div meio*/
-.container .div-meio .txt-meio{
-    width: 50%;
-    padding: 0px 10px 0px 10px;
-}
-/*Coloca margem nas materias pequenas*/
+/*=====Manipula as divs: viagens/restaurantes & hoteis=====*/
+/*Coloca margem nas materias*/
 .container .infos2 .dicas-fernando{
+
     flex-grow: 1;
-    margin: 10px 10px 30px 20px;
+    margin: 20px 0px 30px 20px;
 }
 .container .infos2 .dicas-fernando #div-viagens{
     height: auto;
     width: auto;
-}
-.container .infos2 .dicas-fernando #div-viagens img{
-    max-height: 60%;
 }
 /*Manipula o tamanho da imagem e não a deixa sair da div*/
 .container .infos2 .dicas-fernando .imgs{
@@ -187,7 +193,7 @@ a {
 }
 /*Tamanho do elemento img*/
 .container .infos2 .dicas-fernando .imgs img{
-    max-width: 80%;
+    max-width: 90%;
 }
 /*Subtitulos das materias pequenas*/
 .container .infos2 .dicas-fernando .img .sub2{
@@ -199,8 +205,6 @@ a {
     font-size: 14px;
     width: 70%;
 }
-
-/*Amandah*/
 /*Footer*/
 footer {
     background-color: #6B6868;
@@ -210,12 +214,12 @@ footer {
     padding: 0px;
     margin: 0px;
     color: white;
+    margin-top: 5%;
 }
 /*Logo footer*/
 .logof #logo {
     margin-left: -75vw;
     max-width: 230px;
-
 }
 /*Formulario*/
 .form {
